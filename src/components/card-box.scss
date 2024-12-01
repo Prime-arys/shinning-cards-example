@@ -1,0 +1,38 @@
+:root {
+    --card-bg: rgb(190, 36, 36);
+    --shinning-radius: 360px;
+}
+
+.card-box {
+    position: relative;
+    background-color: #f0f0f0;
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+    border-radius: 18px;
+    z-index: 5;
+    overflow: hidden;
+    transition: all 0.2s ease;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(
+            var(--shinning-radius) circle at var(--mouse-x) var(--mouse-y),
+            var(--card-bg),
+            transparent 70%
+        );
+        //opacity: var(--light-intensity, 0);
+        transition: opacity 0.2s ease;
+        pointer-events: none;
+    }
+
+    &:hover::before {
+        background-color: color-mix(in srgb, var(--card-bg) 50%, transparent);
+    }
+
+}
