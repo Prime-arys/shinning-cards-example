@@ -23,7 +23,7 @@ function App() {
     [3, 3, 6],      // Two quarters + half
   ];
 
-  // Create a layout that fills 9 cards with proper spacing
+  // Create a layout that fills the grid with proper spacing
   const generateLayout = () => {
     const layout = [];
     let remaining = cardsNumber;
@@ -35,7 +35,7 @@ function App() {
       remaining -= toTake;
     }
     
-    return layout.slice(0, 9);
+    return layout.slice(0, cardsNumber);
   };
 
   const sizeList = generateLayout();
