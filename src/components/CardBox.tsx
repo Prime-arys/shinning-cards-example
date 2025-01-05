@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React, { useRef, useEffect } from 'react';
 import './card-box.scss';
 
@@ -33,8 +32,5 @@ function CardBox({ children }: CardBoxProps) {
     );
 }
 
-CardBox.propTypes = {
-    children: PropTypes.node.isRequired
-};
 
 export default CardBox;
