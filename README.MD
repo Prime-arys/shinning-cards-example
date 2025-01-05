@@ -1,6 +1,6 @@
 # Shinning Cards Example
 
-This is a simple example of a ``card`` shinning effect using mouse position.
+This is a simple example of a ``card`` shinning effect using mouse position, in React.
 
 ## How to run
 
@@ -11,7 +11,7 @@ npm run dev
 
 ## How it works
 
-Each card in aware of the mouse position in the screen.
+Each card is aware of the mouse position in the screen.
 Cards will calculate a halo effect around the mouse, and the card will be illuminated by this halo.
 A card is composed with a ``box`` and the card itself/card content.
 The ``box`` is the one that will be lighted up by the halo effect (technically, the whole ``box`` will be lighted up).
